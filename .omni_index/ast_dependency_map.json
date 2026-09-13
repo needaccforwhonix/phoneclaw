@@ -1,0 +1,773 @@
+[
+  {
+    "file": "gradlew",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "settings.gradle.kts",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "success"
+  },
+  {
+    "file": "gradle.properties",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "gradlew.bat",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "README.md",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "LICENSE",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "build.gradle.kts",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".gitignore",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "gradle/libs.versions.toml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "gradle/wrapper/gradle-wrapper.properties",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/google-services.json.example",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/proguard-rules.pro",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/build.gradle.kts",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/.gitignore",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/test/java/com/example/universal/ExampleUnitTest.kt",
+    "dependencies": [
+      "org.junit.Test",
+      "org.junit.Assert."
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/AndroidManifest.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/SecondFragment.kt",
+    "dependencies": [
+      "com.example.universal.databinding.FragmentSecondBinding",
+      "androidx.navigation.fragment.findNavController",
+      "android.os.Bundle",
+      "android.view.View",
+      "android.view.LayoutInflater",
+      "android.view.ViewGroup",
+      "androidx.fragment.app.Fragment"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/MainActivity.kt",
+    "dependencies": [
+      "android.os.Environment",
+      "android.location.LocationManager",
+      "android.provider.MediaStore",
+      "androidx.annotation.RequiresApi",
+      "kotlin.coroutines.cancellation.CancellationException",
+      "android.view.LayoutInflater",
+      "android.speech.SpeechRecognizer",
+      "kotlinx.coroutines.delay",
+      "kotlinx.coroutines.CoroutineScope",
+      "android.hardware.camera2.CameraManager",
+      "java.util.Calendar",
+      "java.io.ByteArrayOutputStream",
+      "okhttp3.MediaType.Companion.toMediaTypeOrNull",
+      "android.accessibilityservice.AccessibilityServiceInfo",
+      "kotlinx.coroutines.runBlocking",
+      "java.io.FileOutputStream",
+      "android.view.View",
+      "android.animation.AnimatorSet",
+      "android.app.DownloadManager",
+      "android.net.Uri",
+      "kotlinx.coroutines.SupervisorJob",
+      "java.util.UUID",
+      "com.google.firebase.database.DataSnapshot",
+      "android.Manifest",
+      "com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton",
+      "com.google.firebase.database.FirebaseDatabase",
+      "okhttp3.RequestBody.Companion.toRequestBody",
+      "android.net.wifi.WifiNetworkSpecifier",
+      "androidx.appcompat.app.AppCompatActivity",
+      "androidx.recyclerview.widget.RecyclerView",
+      "android.net.Network",
+      "java.text.SimpleDateFormat",
+      "androidx.core.app.ActivityCompat",
+      "kotlinx.coroutines.launch",
+      "com.google.gson.Gson",
+      "com.google.android.material.tabs.TabLayoutMediator",
+      "android.webkit.JavascriptInterface",
+      "java.io.IOException",
+      "android.speech.RecognizerIntent",
+      "android.app.NotificationManager",
+      "com.google.android.material.textfield.TextInputLayout",
+      "android.bluetooth.BluetoothAdapter",
+      "com.google.firebase.storage.FirebaseStorage",
+      "android.app.ActivityManager",
+      "java.util.concurrent.Executors",
+      "com.google.firebase.storage.ktx.storage",
+      "android.content.Context",
+      "android.os.VibrationEffect",
+      "java.net.URL",
+      "java.util.concurrent.ScheduledExecutorService",
+      "androidx.recyclerview.widget.LinearLayoutManager",
+      "android.provider.AlarmClock",
+      "androidx.core.content.ContextCompat",
+      "com.google.firebase.database.DatabaseReference",
+      "android.annotation.SuppressLint",
+      "com.google.android.material.textfield.TextInputEditText",
+      "java.net.Inet4Address",
+      "okhttp3.Request",
+      "android.net.NetworkCapabilities",
+      "android.net.ConnectivityManager",
+      "android.view.animation.DecelerateInterpolator",
+      "java.net.HttpURLConnection",
+      "com.google.firebase.database.ktx.database",
+      "android.graphics.BitmapFactory",
+      "android.view.accessibility.AccessibilityManager",
+      "kotlinx.coroutines.isActive",
+      "kotlinx.coroutines.",
+      "com.google.android.material.dialog.MaterialAlertDialogBuilder",
+      "com.google.android.material.button.MaterialButton",
+      "org.json.JSONObject",
+      "android.os.Build",
+      "android.graphics.Canvas",
+      "android.provider.CalendarContract",
+      "android.provider.ContactsContract",
+      "android.speech.RecognitionListener",
+      "androidx.fragment.app.FragmentActivity",
+      "com.google.firebase.FirebaseApp",
+      "java.io.File",
+      "okhttp3.OkHttpClient",
+      "com.example.universal.BuildConfig",
+      "android.os.Bundle",
+      "android.net.wifi.WifiManager",
+      "android.view.ViewGroup",
+      "android.location.Location",
+      "android.graphics.Bitmap",
+      "java.net.NetworkInterface",
+      "android.content.SharedPreferences",
+      "android.os.BatteryManager",
+      "androidx.viewpager2.widget.ViewPager2",
+      "androidx.appcompat.widget.Toolbar",
+      "android.animation.ObjectAnimator",
+      "androidx.viewpager2.adapter.FragmentStateAdapter",
+      "android.media.AudioManager",
+      "java.util.Date",
+      "java.util.Locale",
+      "kotlinx.coroutines.withContext",
+      "com.google.firebase.ktx.Firebase",
+      "androidx.swiperefreshlayout.widget.SwipeRefreshLayout",
+      "androidx.fragment.app.Fragment",
+      "android.os.Vibrator",
+      "kotlin.math.floor",
+      "kotlinx.coroutines.Dispatchers",
+      "android.telephony.SmsManager",
+      "android.content.pm.PackageManager",
+      "android.animation.Animator",
+      "android.graphics.Rect",
+      "android.speech.tts.TextToSpeech",
+      "android.util.Base64",
+      "android.net.NetworkRequest",
+      "com.google.android.material.tabs.TabLayout",
+      "java.util.concurrent.TimeUnit",
+      "android.widget.TextView",
+      "android.content.Intent",
+      "android.util.Log",
+      "kotlinx.coroutines.tasks.await",
+      "android.provider.Settings",
+      "com.google.firebase.database.ValueEventListener"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/ScreenCaptureService.kt",
+    "dependencies": [
+      "android.app.Activity",
+      "android.app.NotificationChannel",
+      "android.media.projection.MediaProjection",
+      "kotlinx.coroutines.cancel",
+      "kotlinx.coroutines.launch",
+      "java.nio.ByteBuffer",
+      "android.util.DisplayMetrics",
+      "androidx.core.app.NotificationCompat",
+      "kotlinx.coroutines.Dispatchers",
+      "android.os.Build",
+      "kotlinx.coroutines.CoroutineScope",
+      "android.graphics.PixelFormat",
+      "android.media.ImageReader",
+      "android.app.NotificationManager",
+      "java.io.ByteArrayOutputStream",
+      "android.media.projection.MediaProjectionManager",
+      "kotlinx.coroutines.SupervisorJob",
+      "android.app.Service",
+      "android.graphics.Bitmap",
+      "android.content.Intent",
+      "android.util.Log",
+      "android.os.IBinder",
+      "android.app.Notification",
+      "android.view.WindowManager"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/MyAccessibilityService.kt",
+    "dependencies": [
+      "android.graphics.Rect",
+      "android.os.Build",
+      "android.graphics.Path",
+      "android.accessibilityservice.AccessibilityService",
+      "android.util.Log",
+      "android.os.Bundle",
+      "android.view.accessibility.AccessibilityNodeInfo",
+      "android.view.accessibility.AccessibilityNodeInfo.ACTION_CLICK",
+      "android.widget.ScrollView",
+      "android.accessibilityservice.GestureDescription",
+      "android.accessibilityservice.GestureDescription.StrokeDescription",
+      "java.util.Locale",
+      "android.view.accessibility.AccessibilityEvent"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/ScreenshotActivity.kt",
+    "dependencies": [
+      "android.app.Activity",
+      "android.content.Intent",
+      "androidx.appcompat.app.AppCompatActivity",
+      "android.os.Bundle",
+      "androidx.core.content.ContextCompat",
+      "android.media.projection.MediaProjectionManager",
+      "androidx.activity.result.contract.ActivityResultContracts"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/AnimatedSphereView.kt",
+    "dependencies": [
+      "android.content.Context",
+      "android.graphics.",
+      "kotlin.math.",
+      "android.view.View",
+      "android.view.animation.LinearInterpolator",
+      "android.animation.ValueAnimator",
+      "android.util.AttributeSet"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/MyApplication.kt",
+    "dependencies": [
+      "com.google.firebase.FirebaseApp",
+      "android.app.Application"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/FirstFragment.kt",
+    "dependencies": [
+      "com.example.universal.databinding.FragmentFirstBinding",
+      "androidx.navigation.fragment.findNavController",
+      "android.os.Bundle",
+      "android.view.View",
+      "android.view.LayoutInflater",
+      "android.view.ViewGroup",
+      "androidx.fragment.app.Fragment"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/java/com/example/universal/Video.kt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values-w1240dp/dimens.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values/dimens.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values/strings.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values/themes.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values/styles.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values/colors.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/menu/menu_main.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values-land/dimens.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/tab_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_task.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_launcher_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/dialog_custom_cron.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/toolbar_gradient.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_time.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/dialog_edit_code.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_mic.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_history.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_play.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/content_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_edit.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/status_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_delete.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_code.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_schedule.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_refresh.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/gradient_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/code_background.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/status_brackground.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/drawable/ic_clear.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values-night/themes.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/fragment_generation_history.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/activity_screenshot.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/dialog_custom_cron.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/dialog_edit_code.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/item_scheduled_task.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/content_main.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/fragment_first.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/fragment_second.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/activity_main.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/item_generation_history.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/layout/fragment_scheduled_tasks.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/xml/data_extraction_rules.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/xml/file_paths.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/xml/backup_rules.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/xml/accessibility_service_config.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values-w600dp/dimens.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/navigation/nav_graph.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/main/res/values-v23/themes.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "app/src/androidTest/java/com/example/universal/ExampleInstrumentedTest.kt",
+    "dependencies": [
+      "org.junit.runner.RunWith",
+      "androidx.test.ext.junit.runners.AndroidJUnit4",
+      "org.junit.Assert.",
+      "org.junit.Test",
+      "androidx.test.platform.app.InstrumentationRegistry"
+    ],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "clawscripts/twitter_clawscript.txt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "clawscripts/medium_clawscript.txt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "clawscripts/instagram_clawscript.txt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "clawscripts/youtube_clawscript.txt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": "clawscripts/tiktok_clawscript.txt",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/deploymentTargetSelector.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/kotlinc.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/.name",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/runConfigurations.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/gradle.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/compiler.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/misc.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/AndroidProjectSystem.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/deviceManager.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/migrations.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/.gitignore",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/codeStyles/codeStyleConfig.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  },
+  {
+    "file": ".idea/codeStyles/Project.xml",
+    "dependencies": [],
+    "llama_nemotron_8b_status": "failed",
+    "gemini_embedding_2_status": "failed"
+  }
+]
