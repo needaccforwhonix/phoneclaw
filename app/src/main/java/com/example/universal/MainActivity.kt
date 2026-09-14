@@ -183,11 +183,14 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
         const val KEY_UNIVERSAL_SCRIPT_LAST_UPDATE = "universal_script_last_update"
         const val KEY_DEBUG_MODE = "debug_mode"
         const val KEY_MAGIC_RUN_INDEX = "magic_run_index"
+        const val KEY_OPENROUTER_MODEL = "openrouter_model"
         const val MICROPHONE_PERMISSION_REQUEST = 1001
         const val SETTINGS_REQUEST_CODE = 1002
         const val LOCATION_PERMISSION_REQUEST = 1003
         const val UNIVERSAL_SCRIPT_URL = "https://cheatlayer.com/universal4.txt"
     }
+
+    private data class OpenRouterModel(val id: String, val label: String)
 
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var speechRecognizerIntent: Intent
@@ -206,6 +209,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
     private lateinit var statusText: TextView
     private lateinit var clearScheduleButton: MaterialButton
     private lateinit var refreshButton: MaterialButton
+    private lateinit var selectModelButton: MaterialButton
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager2
     private lateinit var voiceFab: ExtendedFloatingActionButton
@@ -1001,6 +1005,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
             Log.e("MainActivity", "Failed to initialize SharedPreferences: ${e.message}")
             sharedPreferences = getSharedPreferences("FallbackPrefs", Context.MODE_PRIVATE)
         }
+        updateModelButton()
 
         initializeUserEmail()
         tts = TextToSpeech(this, this)
@@ -1157,6 +1162,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
         statusText = findViewById(R.id.statusText)
         clearScheduleButton = findViewById(R.id.clearScheduleButton)
         refreshButton = findViewById(R.id.refreshButton)
+        selectModelButton = findViewById(R.id.selectModelButton)
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
         microphoneButton = findViewById(R.id.microphoneButton)
@@ -1181,6 +1187,11 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
             animateButtonClick(it)
             updateUI()
             speakText("Interface refreshed")
+        }
+
+        selectModelButton.setOnClickListener {
+            animateButtonClick(it)
+            showOpenRouterModelDialog()
         }
 
         Log.d("MainActivity", "Modern UI initialized successfully")
@@ -1213,6 +1224,64 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
 
             fadeOut.start()
         }
+    }
+
+    private fun getOpenRouterModelOptions(): List<OpenRouterModel> {
+        return listOf(
+            OpenRouterModel("google/gemini-2.0-flash-001", "Gemini 2.0 Flash"),
+            OpenRouterModel("meta-llama/llama-4-maverick:free", "Llama 4 Maverick (Free)")
+        )
+    }
+
+    private fun getSelectedOpenRouterModelId(): String {
+        val defaultId = getOpenRouterModelOptions().first().id
+        if (!::sharedPreferences.isInitialized) return defaultId
+
+        val saved = sharedPreferences.getString(KEY_OPENROUTER_MODEL, null)
+        return if (saved != null && getOpenRouterModelOptions().any { it.id == saved }) {
+            saved
+        } else {
+            defaultId
+        }
+    }
+
+    private fun setSelectedOpenRouterModelId(id: String) {
+        if (!::sharedPreferences.isInitialized) return
+        sharedPreferences.edit().putString(KEY_OPENROUTER_MODEL, id).apply()
+    }
+
+    private fun updateModelButton() {
+        if (!::selectModelButton.isInitialized) return
+        val selectedId = getSelectedOpenRouterModelId()
+        val label = getOpenRouterModelOptions()
+            .firstOrNull { it.id == selectedId }
+            ?.label
+            ?: selectedId
+        selectModelButton.text = "Model: $label"
+    }
+
+    private fun showOpenRouterModelDialog() {
+        val options = getOpenRouterModelOptions()
+        if (options.isEmpty()) {
+            speakText("No models available")
+            return
+        }
+
+        val selectedId = getSelectedOpenRouterModelId()
+        val selectedIndex = options.indexOfFirst { it.id == selectedId }.let { if (it >= 0) it else 0 }
+        val labels = options.map { "${it.label} (${it.id})" }.toTypedArray()
+
+        MaterialAlertDialogBuilder(this, R.style.MaterialAlertDialog)
+            .setTitle("Select OpenRouter Model")
+            .setSingleChoiceItems(labels, selectedIndex) { dialog, which ->
+                val selected = options[which]
+                setSelectedOpenRouterModelId(selected.id)
+                updateModelButton()
+                speakText("Selected model ${selected.label}")
+                dialog.dismiss()
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
     }
 
     class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
@@ -3672,10 +3741,22 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
             .retryOnConnectionFailure(true)
             .build()
 
-        val models = listOf(
-            "google/gemini-2.0-flash-001",
-            "meta-llama/llama-4-maverick:free"
-        )
+        val modelOptions = getOpenRouterModelOptions()
+        val selectedModel = getSelectedOpenRouterModelId()
+        val models = if (modelOptions.isNotEmpty()) {
+            val ordered = mutableListOf<String>()
+            if (modelOptions.any { it.id == selectedModel }) {
+                ordered.add(selectedModel)
+            }
+            for (option in modelOptions) {
+                if (option.id != selectedModel) {
+                    ordered.add(option.id)
+                }
+            }
+            ordered
+        } else {
+            listOf(selectedModel)
+        }
 
         for (modelIndex in models.indices) {
             val currentModel = models[modelIndex]
@@ -3738,7 +3819,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener, Recogniti
                         .url("https://openrouter.ai/api/v1/chat/completions")
                         .header("Content-Type", "application/json")
                         .header("Authorization", "Bearer OPENROUTERKEY")
-                        .header("HTTP-Referer", "droidphone.com")
+                        .header("HTTP-Referer", "getsupers.com")
                         .header("X-Title", "PhoneClaw")
                         .post(requestBody)
                         .build()
@@ -5545,7 +5626,7 @@ Generate JavaScript automation code for the user's command:
                 val request = Request.Builder()
                     .url("https://api.moondream.ai/v1/query")
                     .header("Content-Type", "application/json")
-                    .header("X-Moondream-Auth", "MoondreamKEY")
+                    .header("X-Moondream-Auth", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlfaWQiOiI2YzE4ZDI4NC1lNDMzLTQxNjYtYjg4Ni1jOGY4YjIxMTc1OGEiLCJvcmdfaWQiOiJkUDFESW96ZXFTNUxEc3ByNDFXT2N6dkJuSFpOM0hXWSIsImlhdCI6MTc3MDgzNDEyNiwidmVyIjoxfQ.54YnmshifLTBAsOWGCDHR-GL6yzTV-H3EAFNimMbqLk")
                     .post(body)
                     .build()
 

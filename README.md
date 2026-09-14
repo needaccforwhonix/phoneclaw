@@ -1,9 +1,54 @@
+
 **PhoneClaw**
 PhoneClaw is an Android automation app that runs on-device workflows and lets you generate automation logic at runtime using **ClawScript**, a JavaScript-based scripting language built into the app.
 
 PhoneClaw is inspired by Claude Bot/Claude Code and attempts to rebuild the agent loop for android phones natively to act as your personal assistant with access to all your apps. 
 
+**OpenClaw Install***
+
+
+npm install -g superpowers-ai
+superpowers --help
+
+Open the URL it gives you to control the stream. 
+
+npm package: https://npmjs.com/package/superpowers-ai
+
+Chrome Extension: https://chromewebstore.google.com/detail/superpowers-ai/oolmdenpaebkcokkccakmlmhcpnogalc
+
+Clawhub: https://clawhub.ai/rohanarun/super-powers
+
+**Docs**
+
+https://rohanarun-phoneclaw.mintlify.app/
+
 **Demos**
+
+World's first software-only iPhone Automation: https://www.youtube.com/watch?v=QT67RvAt69o
+
+Live demo: https://getsupers.com
+
+iOS App: https://apps.apple.com/us/app/superpowers-ai/id6758969961   
+
+Apple Vision Pro demo: https://x.com/Viewforge/status/2028401641549164834 
+
+Automate your old Androids: https://youtube.com/live/Thc2sAt8uuk 
+
+Automated locking agent: https://x.com/Viewforge/status/2028591471860097289 
+
+Automated X Community Mod Agent: https://x.com/Viewforge/status/2028115961711415657 
+
+$phoneclaw(Solana token) integrated into our app: https://x.com/Viewforge/status/2026482468430426558     
+
+Flying Drones with AI:
+
+[![Flying Drones with AI:](https://img.youtube.com/vi/SWb7RLR1lD0/0.jpg)](https://www.youtube.com/watch?v=SWb7RLR1lD0)
+
+
+Automating Twitter In A Waymo With Android XR
+
+[![Automating Twitter In A Waymo:](https://img.youtube.com/vi/_F5Wfbragh8/0.jpg)](https://www.youtube.com/watch?v=_F5Wfbragh8)
+
 
 Automating Uploading Videos To Tiktok With Songs:
 
@@ -17,6 +62,9 @@ Automating Creating Instagram Accounts With 2FA From Email:
 Automating Captchas:
 
 [![Automating Captchas:](https://img.youtube.com/vi/aBgbr27fR5M/0.jpg)](https://www.youtube.com/watch?v=aBgbr27fR5M)
+
+**Updates**
+- 2/19/26 updated to allow selecting the openrouter model 
 
 
 **What It Can Do**
@@ -78,4 +126,10 @@ const otp = magicScraper("The 2FA code shown in the SMS notification")
 MOONDREAM_AUTH=YOUR_TOKEN_HERE
 ```
 
+**Community**
 
+Discord: https://discord.gg/supers
+
+Youtube: https://www.youtube.com/@getsuperpowers
+
+Twitter: [https://x.com/i/communities/2025816983716184465](https://x.com/i/communities/2026071470741635468)

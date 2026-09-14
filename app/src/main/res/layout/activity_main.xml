@@ -54,6 +54,20 @@
                         android:background="@drawable/status_background"
                         android:padding="12dp"
                         android:drawablePadding="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/selectModelButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Model: Loading..."
+                        android:textColor="#cdd6f4"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="#313244"
+                        app:strokeColor="#45475a"
+                        app:strokeWidth="1dp"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
 <!-- Add this FloatingActionButton to your existing layout -->
 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
     android:id="@+id/microphoneButton"
